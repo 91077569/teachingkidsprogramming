@@ -48,10 +48,13 @@ public class ChooseYourOwnAdventure
     //         Tell the user "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket." --#3
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
-    MessageBox.showMessage(
+    String answer = MessageBox.askForTextInput(
         "Do you want to pour the ooze into the 'backyard' or 'toilet'? Hint umm try toilet? no try backyard?");
+    String toilet = answer;
     //         If they answer "toilet" --#8.1
+    if (answer == toilet)
+    {
+    }
     //            pourIntoToilet (recipe below) --#12.1
     //            ------------- Recipe for pourIntoToilet --#12.2
     //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
