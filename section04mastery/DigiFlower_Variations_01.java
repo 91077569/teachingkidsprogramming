@@ -10,13 +10,14 @@ public class DigiFlower_Variations_01
 {
   public static void main(String[] args)
   {
+    Tortoise.setY(100);
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Silver);
     Tortoise.setPenWidth(3);
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < 50; i++)
     {
-      Tortoise.turn(360 / 15);
+      Tortoise.turn(5943 / 45);
       createColourPalette();
       drawOctagon();
     }
@@ -26,8 +27,8 @@ public class DigiFlower_Variations_01
     for (int i = 0; i < 8; i++)
     {
       Tortoise.setPenColor(ColorWheel.getNextColor());
-      Tortoise.move(40);
-      Tortoise.turn(720 / 50);
+      Tortoise.move(50);
+      Tortoise.turn(4480 / 313);
     }
   }
   private static void createColourPalette()
