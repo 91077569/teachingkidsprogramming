@@ -22,14 +22,14 @@ public class DeepDive06ModelViewController
   @Test
   public void stringsCanBeArrays() throws Exception
   {
-    String[] words = {"happy ", ___};
+    String[] words = {"happy ", "baby"};
     String result = words[0] + words[1];
     Assert.assertEquals("happy baby", result);
   }
   @Test
   public void numbersCanBeStrings() throws Exception
   {
-    int numberOfBabies = ____;
+    int numberOfBabies = 10;
     String words = "" + numberOfBabies + " happy babies";
     Assert.assertEquals("10 happy babies", words);
   }
@@ -37,7 +37,7 @@ public class DeepDive06ModelViewController
   public void trashtalkingFlorida() throws Exception
   {
     String compareThis = "is to";
-    String analogy = "Florida " + ___ + " America as appendix " + ___ + " body";
+    String analogy = "Florida " + "is to" + " America as appendix " + "is to" + " body";
     Assert.assertEquals("Florida is to America as appendix is to body", analogy);
   }
   @Test
@@ -46,7 +46,7 @@ public class DeepDive06ModelViewController
     String fishReference = "The sardines were";
     String airplaneStress = "the coach section of a 747.";
     String analogy = fishReference + " packed as tight as " + airplaneStress;
-    Assert.assertEquals("The sardines were packed as tight as the coach section of a 747.", ___);
+    Assert.assertEquals("The sardines were packed as tight as the coach section of a 747.", analogy);
   }
   @Test
   public void sanityProblems() throws Exception
@@ -54,12 +54,12 @@ public class DeepDive06ModelViewController
     String selfDeprecation = "The nerds who made this were";
     String anAppleADay = "the doctors who complimented their mental stability.";
     String analogy = selfDeprecation + " as sarcastic as " + anAppleADay;
-    Assert.assertEquals(___, analogy);
+    Assert.assertEquals(selfDeprecation + " as sarcastic as " + anAppleADay, analogy);
   }
   @Test
   public void skydivingFrenchKings() throws Exception
   {
-    String compareThis = ___;
+    String compareThis = "is to";
     String analogy = "Skydiving " + compareThis + " sensible as Louis XVI " + compareThis + " leadership";
     Assert.assertEquals("Skydiving is to sensible as Louis XVI is to leadership", analogy);
   }
@@ -67,8 +67,8 @@ public class DeepDive06ModelViewController
   public void infiniteB() throws Exception
   {
     String infinite = "B";
-    String analogy = "The " + ___ + " in " + ___ + "enoit " + ___ + ". Mandelbrot stands for " + ___ + "enoit "
-        + ___ + ". Mandelbrot.";
+    String analogy = "The " + "B" + " in " + "B" + "enoit " + "B" + ". Mandelbrot stands for " + "B" + "enoit "
+        + "B" + ". Mandelbrot.";
     Assert.assertEquals("The B in Benoit B. Mandelbrot stands for Benoit B. Mandelbrot.", analogy);
   }
   @Test
@@ -82,7 +82,7 @@ public class DeepDive06ModelViewController
         + " plus three times the square root of four, divided by seven, plus five times eleven";
     String aResult = aCalculation + " is nine squared and not a bit more";
     Assert.assertEquals("A dozen, a gross, and a score plus three times the square root of four,"
-        + " divided by seven, plus five times eleven is nine squared and not a bit more", ___);
+        + " divided by seven, plus five times eleven is nine squared and not a bit more", aResult);
   }
   @Test
   public void lookUp() throws Exception
@@ -91,7 +91,7 @@ public class DeepDive06ModelViewController
     numbers.put(12, "dozen");
     numbers.put(144, "gross");
     numbers.put(20, "score");
-    String aSomething = "A " + numbers.get(____) + ", a " + numbers.get(____) + ", and a " + numbers.get(____);
+    String aSomething = "A " + numbers.get(12) + ", a " + numbers.get(144) + ", and a " + numbers.get(20);
     String aCalculation = aSomething
         + " plus three times the square root of four, divided by seven, plus five times eleven";
     String aResult = aCalculation + " is nine squared and not a bit more";
@@ -101,9 +101,9 @@ public class DeepDive06ModelViewController
   @Test
   public void inYourOwnWords() throws Exception
   {
-    numbers.put(12, ___);
-    numbers.put(144, ___);
-    numbers.put(20, ___);
+    numbers.put(12, "dozen");
+    numbers.put(144, "gross");
+    numbers.put(20, "score");
     String aSomething = "A " + numbers.get(12) + ", a " + numbers.get(144) + ", and a " + numbers.get(20);
     String aCalculation = aSomething
         + " plus three times the square root of four, divided by seven, plus five times eleven";
