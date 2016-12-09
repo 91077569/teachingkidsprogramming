@@ -9,16 +9,19 @@ public class AdLibsQuiz extends AdLibsQuizAdapter
   public void question1(String letter1, String letter3)
   {
     //  Set current value of word1 to be letter1 + 'o' + letter3
+    word1 = letter1 + 'o' + letter3;
   }
   @Override
   public void question2(String letter1)
   {
     //  Add the letter1 to the end of word2 
+    word2 = word2 + letter1;
   }
   @Override
   public void question3(String templateText, Object model)
   {
     //  Use the parser to combine the template and the model as word3
+    word3 = word1 + word2;
   }
   @Override
   public void question4(Pieces pieces)
