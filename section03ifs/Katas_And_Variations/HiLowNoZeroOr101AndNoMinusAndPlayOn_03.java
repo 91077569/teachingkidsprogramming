@@ -20,7 +20,7 @@ public class HiLowNoZeroOr101AndNoMinusAndPlayOn_03
   {
     int answer = NumberUtils.getRandomInt(1, 100);
     //MessageBox.showMessage("The answer is " + answer); // delete (or comment out) this line after testing the game 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 10; i++)
     {
       int guess = MessageBox.askForNumericalInput("Guess a number");
       if (guess == answer)

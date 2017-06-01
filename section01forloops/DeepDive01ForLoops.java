@@ -54,7 +54,7 @@ public class DeepDive01ForLoops
   @Test
   public void theTortoiseTurns21() throws Exception
   {
-    Tortoise.turn(21);
+    Tortoise.turn(21.0);
     Assert.assertEquals(21.0, Tortoise.getAngle(), 0.01);
   }
   @Test
@@ -78,7 +78,7 @@ public class DeepDive01ForLoops
     Assert.assertEquals(myFavoriteNumber, 101);
   }
   @Test
-  public void combiningNumbers() throws Exception
+  public void bbgbbb() throws Exception
   {
     int age = 3 + 4;
     Assert.assertEquals(age, 7);
@@ -99,7 +99,7 @@ public class DeepDive01ForLoops
   public void textIsTextEvenWhenItsNumbers() throws Exception
   {
     String age = "3" + "4";
-    Assert.assertEquals(age, 34);
+    Assert.assertEquals(age, "34");
   }
   @Test
   public void combiningTextInALoop() throws Exception
@@ -109,13 +109,13 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AHHH");
   }
   @Test
   public void forLoopsEndAtTheEnd() throws Exception
   {
     String numbers = "# ";
-    for (int i = 0; i < ____; i++)
+    for (int i = 0; i < 6; i++)
     {
       numbers += i;
       preventInfiniteLoops();
@@ -126,7 +126,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanStartAnywhere() throws Exception
   {
     String answer = "Because ";
-    for (int i = ____; i < 10; i++)
+    for (int i = 7; i < 10; i++)
     {
       answer += i;
       preventInfiniteLoops();
@@ -138,7 +138,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanSkip() throws Exception
   {
     String numbers = "# ";
-    for (int i = 1; i < 20; i += ____)
+    for (int i = 1; i < 20; i += 2)
     {
       numbers = numbers + i + ",";
       preventInfiniteLoops();
@@ -149,7 +149,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanSkipUpAndDown() throws Exception
   {
     String numbers = "# ";
-    for (int i = 20; 0 < i && i < 40; i += ____)
+    for (int i = 20; 0 < i && i < 40; i += -3)
     {
       numbers = numbers + i + ",";
       preventInfiniteLoops();
@@ -160,7 +160,7 @@ public class DeepDive01ForLoops
   public void forLoopsCanGoBackwards() throws Exception
   {
     String numbers = "Countdown: ";
-    for (int i = 9; i >= 1; i += ____)
+    for (int i = 9; i >= 1; i += -1)
     {
       numbers += i;
       preventInfiniteLoops();
@@ -175,7 +175,7 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AH");
   }
   /**
    * Ignore the following, it's needed to run the deep dive

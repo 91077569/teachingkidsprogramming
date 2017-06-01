@@ -27,7 +27,7 @@ public class DeepDive07Objects
     Tortoise rafael = new Tortoise();
     Tortoise michealangelo = new Tortoise();
     boolean result = rafael.equals(michealangelo);
-    Assert.assertEquals(______, result);
+    Assert.assertEquals(false, result);
   }
   @Test
   public void twoTortoisesAgain() throws Exception
@@ -35,14 +35,14 @@ public class DeepDive07Objects
     Tortoise rafael = new Tortoise();
     Tortoise anonymousNinja = rafael;
     boolean result = rafael.equals(anonymousNinja);
-    Assert.assertEquals(_____, result);
+    Assert.assertEquals(true, result);
   }
   @Test
   public void twoTortoisesYetAgain() throws Exception
   {
     Tortoise rafael = new Tortoise();
     Tortoise michelangelo = new Tortoise();
-    Tortoise anonymousNinja = ________;
+    Tortoise anonymousNinja = michelangelo;
     boolean result = michelangelo.equals(anonymousNinja);
     Assert.assertEquals(true, result);
   }
@@ -52,7 +52,7 @@ public class DeepDive07Objects
   public void fatTrailTurtle() throws Exception
   {
     Turtle ninja = new Turtle();
-    this.leonardo = _______;
+    this.leonardo = ninja;
     ninja.setPenWidth(30);
     Assert.assertEquals(30, this.leonardo.getPenWidth());
   }
@@ -62,7 +62,7 @@ public class DeepDive07Objects
   public void explodingTurtle() throws Exception
   {
     Turtle ninja = new Turtle();
-    this._______ = ninja;
+    this.donatello = ninja;
     this.donatello.setAnimal(Animals.ExplodedTurtle);
     Assert.assertTrue("The ninja is still alive!", ninja.isDead());
   }
@@ -72,7 +72,7 @@ public class DeepDive07Objects
     Tortoise michelangelo = new Tortoise();
     michelangelo.likesTopping(Topping.Pepperoni);
     Pizza pizza = new Pizza();
-    pizza.addTopping(_________);
+    pizza.addTopping(Topping.Pepperoni);
     boolean likedIt = michelangelo.eatPizza(pizza);
     Assert.assertTrue("Michelangelo barfs! Wrong pizza!", likedIt);
   }
@@ -84,7 +84,7 @@ public class DeepDive07Objects
     Pizza pizza = new Pizza();
     pizza.addTopping(Topping.Anchovy);
     boolean likedIt = karai.eatPizza(pizza);
-    Assert.assertTrue("Karai turns greener! Wrong pizza!", _____);
+    Assert.assertTrue("Karai turns greener! Wrong pizza!", likedIt);
   }
   @Test
   public void checkOutThePizza() throws Exception
@@ -93,7 +93,7 @@ public class DeepDive07Objects
     cecil.likesTopping(Topping.Cheese);
     Pizza pizza = new Pizza();
     pizza.addTopping(Topping.Cheese);
-    pizza.____();
+    pizza.cook();
     boolean likedIt = cecil.eatPizza(pizza);
     Assert.assertTrue("Cecil sends it back, raw pizza!", likedIt);
   }
@@ -102,7 +102,7 @@ public class DeepDive07Objects
   {
     Tortoise[] tortoises = throwPizzaParty();
     Pizza pizza = new Pizza();
-    pizza.____();
+    pizza.superSizeIt();
     for (Tortoise tortoise : tortoises)
     {
       gotASlice = tortoise.eatPizza(pizza);
@@ -121,7 +121,7 @@ public class DeepDive07Objects
     pizza.superSizeIt();
     for (Tortoise tortoise : tortoises)
     {
-      _____ = tortoise.eatPizza(pizza);
+      gotASlice = tortoise.eatPizza(pizza);
       if (!this.gotASlice)
       {
         break;

@@ -8,32 +8,46 @@ public class SpiderWebQuiz extends SpiderQuiz
   @Override
   public void question1()
   {
-    //      Do the following the current number of times HINT: "number" is a variable name
-    //      Call circle()
-    //      Repeat
+    for (int i = 0; i < number; i++)
+    {
+      circle();
+    }
   }
   public void question2()
   {
-    //      Create and then call a recipe called circleAround which 
-    //      Does the following 3 times
-    //      Call adjust()
-    //      Call question1
-    //      Repeat
+    circleAround();
+  }
+  public void circleAround()
+  {
+    for (int i = 0; i < 3; i++)
+    {
+      adjust();
+      question1();
+    }
   }
   public void question3()
   {
-    //      Create and then call a recipe called grow which 
-    //      Changes the current length so it is multiplied by 2.5
+    grow();
+  }
+  public void grow()
+  {
+    length = length * 2.5;
   }
   public void question4()
   {
-    //      Create and then call a recipe called shrink which 
-    //      Decreases the current length by 9 pixels
+    shrink();
+  }
+  public void shrink()
+  {
+    length = length - 9;
   }
   public void question5()
   {
-    //      Create and then call a recipe called expand which
-    //      Increases the current number by 12
+    expand();
+  }
+  public void expand()
+  {
+    number = number + 12;
   }
   public static void main(String[] args)
   {

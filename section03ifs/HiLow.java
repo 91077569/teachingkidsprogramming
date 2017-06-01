@@ -9,7 +9,7 @@ public class HiLow
   public static void main(String[] args)
   {
     //    Choose a random number between 1 and 100 --#4.1 (fake!) & --#13
-    int randomInt = NumberUtils.getRandomInt(-1000, 1000);
+    int randomInt = NumberUtils.getRandomInt(1, 100);
     for (int i = 0; i < 12; i++)
     {
       int guess = MessageBox.askForNumericalInput("What is your guess");

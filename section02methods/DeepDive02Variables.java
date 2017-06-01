@@ -96,7 +96,7 @@ public class DeepDive02Variables
   public void youCanDivideVariables() throws Exception
   {
     int inches = 36;
-    int feet = inches / 12;
+    int feet = 36 / 12;
     Assert.assertEquals(3, feet);
   }
   @Test
@@ -114,22 +114,11 @@ public class DeepDive02Variables
   public void methodsCanReturnValues() throws Exception
   {
     String bedPost = prepareForBed(); //This method is directly below
-    Assert.assertEquals(bedPost, "gum");
+    Assert.assertEquals(bedPost, ___);
   }
   public String prepareForBed()
   {
     return "gum";
-  }
-  @Test
-  public void methodsReturnValuesAndVariablesExistWithinMethods() throws Exception
-  {
-    String exam = "work";
-    exam = lift();
-    Assert.assertEquals(exam, "studying");
-  }
-  public String lift()
-  {
-    return "studying";
   }
   /**
    * Ignore the following, It's needed to run the deep dive
